@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EIEIEI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        .content{
+            text-align: center;
+        }
+        .maincontent{
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="content">Caption Your Photo</h1>
+            </div>
+        </div>
+        <br><br>
+        <div class="row maincontent">
+            <div class="container">
+                <div class="col">
+                    <h3 id="eiei" class="content">กดปุ่มเพื่อสุ่มแคปชั่น</h1>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col">
+                <div class="content">
+                    <button onclick="somthing()" class="btn btn-primary btn-lg btn-block" type="button">random</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        const caption = ["เราต้องเลือกคนที่หายาให้เรากิน ไม่ใช่คนที่บอกให้เราไปกินยา", "โลกนี้มันไม่ง่ายก่อนที่เราจะสุข ต้องผ่าน พุธ พฤหัส มาก่อน", "ถ้าเธอชอบคนเก่ง เรากินเก่งเธอชอบมั้ย", "เบื่อจังชีวิตโสด อยากเป็นคนโปรดของใครสักคน", "อยากอวดใครสักคน ที่ไม่ซ้ำกับคนของใคร", "กิเลสมีเป็นล้าน ตังค์ในธนาคารมีสองร้อย", "เป็นแค่เวลาสั้นๆ แต่ความทรงจำมัน โครตยาวเลย", "นอกจากจะคิดถึงเขาเก่งแล้ว ยังคิดไปเองเก่งอีก", "แบตหมดให้เดินหาปลั๊กแต่ถ้าขาดความรักให้เดินมาหาเรา", "ถ้าไม่ชอบติดหรู​ หันมาชอบหนูดูสิคะ", "เธอให้มาน้อย ก็ไม่รู้จะเต็มร้อยไปเพื่ออะไร", "ความอ้วนมาเยือน ไม่สะเทือนได้ไง", "เลิกเหอะเช็คอินร้านเหล้า มาเช็คอินบ้านเราดีกว่า", "ให้เบื่อง่ายๆ คงยาก พอดีว่ารักมากซะด้วยสิ", "จะด่าก็สบตา จะนินทาก็เอาให้ได้ยิน", "เป็นคนมี #ฐานะ ...ฐานะเพื่อน"]
+        function somthing() {
+            var item = caption[Math.floor(Math.random() * caption.length)]
+            console.log(item)
+            document.getElementById("eiei").innerHTML = item
+        }
+    </script>
+</body>
+</html>
